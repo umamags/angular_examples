@@ -7,7 +7,7 @@ li.blue {
 }
 </style>
 <?php
-$rootUrl = "";
+$rootUrl = "../books";
 if (isset($_REQUEST["rootUrl"]))
 	$rootUrl = $_REQUEST["rootUrl"];
 
@@ -26,7 +26,7 @@ function read_dir_content($rootUrl, $base_dir, $parent_dir, $depth = 0){
             } else {
             	$len = strlen($base_dir);
             	$rest_str = substr($parent_dir, $len);
-            	$alink = "<a href=" . $rootUrl  . $rest_str . "/" . rawurlencode($file) . ">" . $file . "</a>";
+            	$alink = "<a target = \"_blank\" href=" . $rootUrl  . $rest_str . "/" . rawurlencode($file) . ">" . $file . "</a>";
             	$str_result .= "<li class=\"blue\">{$alink}</li>";
             }
         }
@@ -39,7 +39,7 @@ function read_dir_content($rootUrl, $base_dir, $parent_dir, $depth = 0){
 }
 
 	
-$folderName = "/home/madhan123/books";
+$folderName = "/home/madhan123/www/books";
 if (isset($_REQUEST["folderName"]))
 	$folderName = $_REQUEST["folderName"];
 	
