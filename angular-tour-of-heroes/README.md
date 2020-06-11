@@ -1,10 +1,6 @@
-# BsvNonrpaApp
+# AngularTourOfHeroes
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.6.
-
-## Reference Links
-Link: https://www.ag-grid.com/angular-grid/
-https://medium.com/better-programming/angular-5-creating-new-component-c6c5236f8024
 
 ## Development server
 
